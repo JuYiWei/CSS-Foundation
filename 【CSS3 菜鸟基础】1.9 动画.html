@@ -1,0 +1,345 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  1.9 动画 - 【CSS3 菜鸟基础】说了是村长
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="【CSS3 菜鸟基础】说了是村长" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html">【CSS3 菜鸟基础】说了是村长</a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 【CSS3 菜鸟基础】说了是村长</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>目录</label></li>
+
+          
+            <li><a title="0 序" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%910%20%E5%BA%8F.html">0 序</a></li>
+          
+            <li><a title="1.1 边框" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.1%20%E8%BE%B9%E6%A1%86.html">1.1 边框</a></li>
+          
+            <li><a title="1.2 背景" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.2%20%E8%83%8C%E6%99%AF.html">1.2 背景</a></li>
+          
+            <li><a title="1.3 渐变" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.3%20%E6%B8%90%E5%8F%98.html">1.3 渐变</a></li>
+          
+            <li><a title="1.4 文本效果" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%96%87%E6%9C%AC%E6%95%88%E6%9E%9C.html">1.4 文本效果</a></li>
+          
+            <li><a title="1.5 字体" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E5%AD%97%E4%BD%93.html">1.5 字体</a></li>
+          
+            <li><a title="1.6 2D 转换" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.6%202D%20%E8%BD%AC%E6%8D%A2.html">1.6 2D 转换</a></li>
+          
+            <li><a title="1.7 3D 转换" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.7%203D%E8%BD%AC%E6%8D%A2.html">1.7 3D 转换</a></li>
+          
+            <li><a title="1.8 过渡" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.8%20%E8%BF%87%E6%B8%A1.html">1.8 过渡</a></li>
+          
+            <li><a title="1.9 动画" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.9%20%E5%8A%A8%E7%94%BB.html">1.9 动画</a></li>
+          
+            <li><a title="1.10 多列" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.10%20%E5%A4%9A%E5%88%97.html">1.10 多列</a></li>
+          
+            <li><a title="1.11 用户界面" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.11%20%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.html">1.11 用户界面</a></li>
+          
+            <li><a title="1.12 图片" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.12%20%E5%9B%BE%E7%89%87.html">1.12 图片</a></li>
+          
+            <li><a title="1.13 弹性盒子" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.13%20%E5%BC%B9%E6%80%A7%E7%9B%92%E5%AD%90.html">1.13 弹性盒子</a></li>
+          
+            <li><a title="1.14 多媒体查询" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.14%20%E5%A4%9A%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2.html">1.14 多媒体查询</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>目录</span></li>
+                        
+                          <li><a title="0 序" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%910%20%E5%BA%8F.html">0 序</a></li>
+                        
+                          <li><a title="1.1 边框" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.1%20%E8%BE%B9%E6%A1%86.html">1.1 边框</a></li>
+                        
+                          <li><a title="1.2 背景" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.2%20%E8%83%8C%E6%99%AF.html">1.2 背景</a></li>
+                        
+                          <li><a title="1.3 渐变" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.3%20%E6%B8%90%E5%8F%98.html">1.3 渐变</a></li>
+                        
+                          <li><a title="1.4 文本效果" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%96%87%E6%9C%AC%E6%95%88%E6%9E%9C.html">1.4 文本效果</a></li>
+                        
+                          <li><a title="1.5 字体" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E5%AD%97%E4%BD%93.html">1.5 字体</a></li>
+                        
+                          <li><a title="1.6 2D 转换" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.6%202D%20%E8%BD%AC%E6%8D%A2.html">1.6 2D 转换</a></li>
+                        
+                          <li><a title="1.7 3D 转换" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.7%203D%E8%BD%AC%E6%8D%A2.html">1.7 3D 转换</a></li>
+                        
+                          <li><a title="1.8 过渡" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.8%20%E8%BF%87%E6%B8%A1.html">1.8 过渡</a></li>
+                        
+                          <li><a title="1.9 动画" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.9%20%E5%8A%A8%E7%94%BB.html">1.9 动画</a></li>
+                        
+                          <li><a title="1.10 多列" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.10%20%E5%A4%9A%E5%88%97.html">1.10 多列</a></li>
+                        
+                          <li><a title="1.11 用户界面" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.11%20%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.html">1.11 用户界面</a></li>
+                        
+                          <li><a title="1.12 图片" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.12%20%E5%9B%BE%E7%89%87.html">1.12 图片</a></li>
+                        
+                          <li><a title="1.13 弹性盒子" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.13%20%E5%BC%B9%E6%80%A7%E7%9B%92%E5%AD%90.html">1.13 弹性盒子</a></li>
+                        
+                          <li><a title="1.14 多媒体查询" href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.14%20%E5%A4%9A%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2.html">1.14 多媒体查询</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ <div class="markdown-body">
+<h1>1.9 动画</h1>
+
+<blockquote>
+<p>关键帧动画；</p>
+</blockquote>
+
+<h3 id="toc_0">@keyframes</h3>
+
+<ul>
+<li>已定义</li>
+</ul>
+
+<pre><code>    &lt;style&gt;
+        @keyframes test-animation {
+            from {background: red;}
+            to {background: yellow;}
+        }
+    &lt;/style&gt;
+</code></pre>
+
+<ul>
+<li>自定义</li>
+</ul>
+
+<pre><code>    &lt;style&gt;
+        @keyframes test-animation2 {
+            0%   {background: red;}
+            25%  {background: yellow;}
+            50%  {background: blue;}
+            100% {background: green;}
+        }
+    &lt;/style&gt;
+</code></pre>
+
+<h3 id="toc_1">简写</h3>
+
+<pre><code>    &lt;style&gt;
+        div {
+            animation-name: test-animation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 500ms;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: backwards;
+            animation-play-state: running;
+        }
+    &lt;/style&gt;
+</code></pre>
+
+<h3 id="toc_2">单独属性（按顺序）</h3>
+
+<pre><code>    &lt;style&gt;
+        div {
+            animation: test-animation 2s ease-in-out 500ms infinite normal backwards running;
+        }
+    &lt;/style&gt;
+</code></pre>
+
+<ul>
+<li>animation-name 动画名称</li>
+</ul>
+
+<pre><code>keyframename    指定要绑定到选择器的关键帧的名称
+none            指定有没有动画（可用于覆盖从级联的动画）
+</code></pre>
+
+<ul>
+<li>animation-duration 动画时间</li>
+</ul>
+
+<pre><code>s、ms
+</code></pre>
+
+<ul>
+<li>animation-timing-function 动画效果</li>
+</ul>
+
+<pre><code>linear      动画从头到尾的速度是相同的。
+ease        默认。动画以低速开始，然后加快，在结束前变慢。
+ease-in     动画以低速开始。
+ease-out    动画以低速结束。    
+ease-in-out 动画以低速开始和结束。 
+cubic-bezier(n,n,n,n)   在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值。
+</code></pre>
+
+<ul>
+<li>animation-delay 动画延迟</li>
+</ul>
+
+<pre><code>s、ms
+</code></pre>
+
+<ul>
+<li>animation-iteration-count 动画次数</li>
+</ul>
+
+<pre><code>n   一个数字，定义应该播放多少次动画
+infinite    指定动画应该播放无限次（永远）
+</code></pre>
+
+<ul>
+<li>animation-direction 动画方向</li>
+</ul>
+
+<pre><code>normal  默认值。动画按正常播放。
+reverse 动画反向播放。
+alternate   动画在奇数次（1、3、5...）正向播放，在偶数次（2、4、6...）反向播放。
+alternate-reverse   动画在奇数次（1、3、5...）反向播放，在偶数次（2、4、6...）正向播放。
+initial 设置该属性为它的默认值。
+inherit 从父元素继承该属性。
+</code></pre>
+
+<ul>
+<li>animation-fill-mode 动画属性添加</li>
+</ul>
+
+<pre><code>none    默认值。动画在动画执行之前和之后不会应用任何样式到目标元素。
+forwards    在动画结束后（由 animation-iteration-count 决定），动画将应用该属性值。
+backwards   动画将应用在 animation-delay 定义期间启动动画的第一次迭代的关键帧中定义的属性值。这些都是 from 关键帧中的值（当 animation-direction 为 &quot;normal&quot; 或 &quot;alternate&quot; 时）或 to 关键帧中的值（当 animation-direction 为 &quot;reverse&quot; 或 &quot;alternate-reverse&quot; 时）。
+both    动画遵循 forwards 和 backwards 的规则。也就是说，动画会在两个方向上扩展动画属性。
+initial 设置该属性为它的默认值。
+inherit 从父元素继承该属性。
+</code></pre>
+
+<ul>
+<li>animation-play-state 运行、暂停</li>
+</ul>
+
+<pre><code>paused      指定暂停动画
+running     指定正在运行的动画
+</code></pre>
+
+
+</div>
+
+<br /><br />
+<hr />
+
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.8%20%E8%BF%87%E6%B8%A1.html"  title="Previous Post: 1.8 过渡">&laquo; 1.8 过渡</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.10%20%E5%A4%9A%E5%88%97.html" 
+	        title="Next Post: 1.10 多列">1.10 多列 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
+
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.9%20%E5%8A%A8%E7%94%BB.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>
