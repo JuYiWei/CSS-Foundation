@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  1.5 字体 - 【CSS 基础】说了是村长
+  1.13 margin 外边距 - 【CSS 基础】说了是村长
   
   </title>
  <meta name="description" content="">
@@ -292,36 +292,59 @@
             <div class="large-9 medium-9 columns">
 
  <div class="markdown-body">
-<h1>1.5 字体</h1>
+<h1>1.13 margin 外边距</h1>
 
 <ul>
 <li>
-<a href="#toc_0">引入字体</a>
+<a href="#toc_0">子元素</a>
 </li>
 <li>
-<a href="#toc_1">使用字体</a>
+<a href="#toc_1">兄弟元素</a>
 </li>
 </ul>
 
 
-<h3 id="toc_0">引入字体</h3>
+<blockquote>
+<p>与边框类似，可单独设置四周边距；<br/>
+此处只表现 margin 对布局的影响；<br/>
+margin 在上下会重叠抵消取【大值】，但左右不会重叠抵消；<br/>
+margin 对 span 又没有上下效果；<br/>
+margin 处透明，相比 padding 不透明，不能重叠抵消；</p>
+</blockquote>
 
-<p><a href="https://www.dafont.com/single-malta.font">提供样例字体下载</a></p>
+<h3 id="toc_0">子元素</h3>
 
-<pre><code>    &lt;style&gt;
-        @font-face {
-            font-family: myFont;
-            src: url(SingleMalta.ttf)
-        }
-    &lt;/style&gt;
+<ul>
+<li>margin 外还是 margin，重叠抵消，取大值（30px）</li>
+</ul>
+
+<pre><code>&lt;div style=&quot;margin: 30px;background-color: lawngreen&quot;&gt;
+    &lt;p style=&quot;margin: 20px;background-color: lightcoral&quot;&gt; contect &lt;/p&gt;
+&lt;/div&gt;
 </code></pre>
 
-<h3 id="toc_1">使用字体</h3>
+<ul>
+<li>margin 外是 padding，不能重叠抵消，取 2 次 margin；</li>
+</ul>
 
-<pre><code>&lt;p style=&quot;font-size: 32px;background-color: red;
-    font-family:myFirstFont;&quot;&gt;
-    font-facefont-facefont-facefont-facefont-facefont-face
-&lt;/p&gt;
+<pre><code>&lt;div style=&quot;margin: 30px;padding:10px;background-color: lawngreen&quot;&gt;
+    &lt;p style=&quot;margin: 20px;padding:10px;background-color: lightcoral&quot;&gt; contect &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3 id="toc_1">兄弟元素</h3>
+
+<ul>
+<li>上下 margin，重叠抵消，取大值（40px）</li>
+</ul>
+
+<pre><code>&lt;div style=&quot;margin: 30px;background-color: lawngreen&quot;&gt;
+    &lt;p&gt; p1 &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 40px;background-color: lawngreen&quot;&gt;
+    &lt;p&gt; p2 &lt;/p&gt;
+&lt;/div&gt;
 </code></pre>
 
 
@@ -334,15 +357,15 @@
   <div class="large-6 columns">
 	<div class="text-left" style="padding:15px 0px;">
 		
-	        <a href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%96%87%E6%9C%AC%E6%95%88%E6%9E%9C.html"  title="Previous Post: 1.4 文本效果">&laquo; 1.4 文本效果</a>
+	        <a href="%E3%80%90CSS%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.12%20outline%20%E8%BD%AE%E5%BB%93.html"  title="Previous Post: 1.12 outline 轮廓">&laquo; 1.12 outline 轮廓</a>
 	    
 	</div>
   </div>
   <div class="large-6 columns">
 	<div class="text-right" style="padding:15px 0px;">
 		
-	        <a href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.6%202D%20%E8%BD%AC%E6%8D%A2.html" 
-	        title="Next Post: 1.6 2D 转换">1.6 2D 转换 &raquo;</a>
+	        <a href="%E3%80%90CSS%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.14%20padding%20%E5%86%85%E8%BE%B9%E8%B7%9D.html" 
+	        title="Next Post: 1.14 padding 内边距">1.14 padding 内边距 &raquo;</a>
 	    
 	</div>
   </div>
@@ -355,7 +378,7 @@
 </div>
 <script type="text/javascript">
 	$(function(){
-		var currentURL = '%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E5%AD%97%E4%BD%93.html';
+		var currentURL = '%E3%80%90CSS%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.13%20margin%20%E5%A4%96%E8%BE%B9%E8%B7%9D.html';
 		$('#side-nav a').each(function(){
 			if($(this).attr('href') == currentURL){
 				$(this).parent().addClass('active');

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  1.5 字体 - 【CSS 基础】说了是村长
+  1.22 伪类 - 【CSS 基础】说了是村长
   
   </title>
  <meta name="description" content="">
@@ -292,36 +292,134 @@
             <div class="large-9 medium-9 columns">
 
  <div class="markdown-body">
-<h1>1.5 字体</h1>
+<h1>1.22 伪类</h1>
 
 <ul>
 <li>
-<a href="#toc_0">引入字体</a>
-</li>
-<li>
-<a href="#toc_1">使用字体</a>
+<a href="#toc_0">举例</a>
 </li>
 </ul>
 
 
-<h3 id="toc_0">引入字体</h3>
+<blockquote>
+<p>用来添加一些选择器的特殊效果；<br/>
+元素的某种状态，用于选中该元素以设置效果；</p>
+</blockquote>
 
-<p><a href="https://www.dafont.com/single-malta.font">提供样例字体下载</a></p>
+<h3 id="toc_0">举例</h3>
 
-<pre><code>    &lt;style&gt;
-        @font-face {
-            font-family: myFont;
-            src: url(SingleMalta.ttf)
-        }
-    &lt;/style&gt;
-</code></pre>
+<pre><code>input:checked {
+    // 选中的 input
+}
 
-<h3 id="toc_1">使用字体</h3>
+input:disabled {
+    // 禁用的 input
+}
 
-<pre><code>&lt;p style=&quot;font-size: 32px;background-color: red;
-    font-family:myFirstFont;&quot;&gt;
-    font-facefont-facefont-facefont-facefont-facefont-face
-&lt;/p&gt;
+p:empty {
+    // 没有子元素的 p
+}
+
+input:enabled {
+    // 启用的 input
+}
+
+p:first-of-type {
+    // 每个元素中的 第一个 p；含 嵌套
+}
+
+
+input:in-range {
+    // 输入值在指定范围内的 input
+}
+
+input:invalid {
+    // 不符合输入格式的（无效的） input
+}
+
+p:last-child {
+    最后一个 p
+}
+
+p:last-of-type {
+    // 每个元素中的 最后一个 p；含 嵌套
+}
+
+:not(p) {
+    // p 以外的元素
+}
+
+p:nth-child(2) {
+    // 第 2 个 p
+}
+
+p:nth-last-child(2) {
+    // 倒数 第 2 个 p
+}
+
+p:nth-last-of-type(2) {
+    // 倒数 第 2 个 子元素 p
+}
+
+p:nth-of-type(2) {
+    // 第 2 个 子元素 p
+}
+
+p:only-of-type {
+    // 仅有一个子元素 p 的 p 元素
+}
+
+p:only-child {
+    // 仅有一个子元素 p 的元素的 父元素
+}
+
+input:optional {
+    // 非 required 的 input
+}
+
+input:out-of-range {
+    // 输入值 超出 指定范围内的 input
+}
+
+input:read-only {
+    // 只读的 input
+}
+
+input:read-write {
+    // 可 读写的 input
+}
+
+input:valid {
+    // 有效的 input
+}
+
+a:link {
+    // 未访问的 a
+}
+
+a:visited {
+    // 已访问的 a
+}
+
+a:active {
+    // 正在活动的 a
+}
+
+a:hover {
+    // 鼠标悬停的 a
+}
+
+input:focus {
+    // 焦点状态的 input
+}
+
+p:first-child {
+    // 作为第一个子元素的 p
+}
+
+p:lang(it) {
+    // lang == it 的 p
+}
 </code></pre>
 
 
@@ -334,15 +432,15 @@
   <div class="large-6 columns">
 	<div class="text-left" style="padding:15px 0px;">
 		
-	        <a href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%96%87%E6%9C%AC%E6%95%88%E6%9E%9C.html"  title="Previous Post: 1.4 文本效果">&laquo; 1.4 文本效果</a>
+	        <a href="%E3%80%90CSS%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.21%20%E7%BB%84%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8.html"  title="Previous Post: 1.21 组合选择器">&laquo; 1.21 组合选择器</a>
 	    
 	</div>
   </div>
   <div class="large-6 columns">
 	<div class="text-right" style="padding:15px 0px;">
 		
-	        <a href="%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.6%202D%20%E8%BD%AC%E6%8D%A2.html" 
-	        title="Next Post: 1.6 2D 转换">1.6 2D 转换 &raquo;</a>
+	        <a href="%E3%80%90CSS%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.23%20%E4%BC%AA%E5%85%83%E7%B4%A0.html" 
+	        title="Next Post: 1.23 伪元素">1.23 伪元素 &raquo;</a>
 	    
 	</div>
   </div>
@@ -355,7 +453,7 @@
 </div>
 <script type="text/javascript">
 	$(function(){
-		var currentURL = '%E3%80%90CSS3%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E5%AD%97%E4%BD%93.html';
+		var currentURL = '%E3%80%90CSS%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.22%20%E4%BC%AA%E7%B1%BB.html';
 		$('#side-nav a').each(function(){
 			if($(this).attr('href') == currentURL){
 				$(this).parent().addClass('active');
